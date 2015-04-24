@@ -3,7 +3,12 @@
     <h2>Please Sign In</h2>
 
     <div ng-repeat="item in students" class="student">
-      <p>{{item.name}}</p>
+      <p>
+        {{item.name}}
+        <button ng-hide="item.present" ng-click="toggleState(item)" class="btn btn-default">Sign In</button>
+        <button ng-show="item.present" ng-click="toggleState(item)" class="btn btn-warning"><b>Sign Out</b></button>
+      </p>
+
     </div>
   </div>
 
