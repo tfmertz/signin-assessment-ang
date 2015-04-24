@@ -7,4 +7,13 @@ signinApp.config(function($stateProvider) {
     templateUrl: "partials/home.html"
   });
 
+  $stateProvider.state("sign-in", {
+    url: "/sign-in",
+    templateUrl: "partials/sign-in.html"
+  });
+
+  $stateProvider.state("presence", {
+    url: "/presence",
+    templateUrl: "partials/presence.html"
+  });
 });
