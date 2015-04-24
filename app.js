@@ -4,7 +4,7 @@ signinApp.config(function($stateProvider) {
 
   $stateProvider.state('home', {
     url: "",
-    templateUrl: "partials/home.html"
+    templateUrl: "partials/home.html",
   });
 
   $stateProvider.state("sign-in", {
@@ -15,6 +15,7 @@ signinApp.config(function($stateProvider) {
 
   $stateProvider.state("presence", {
     url: "/presence",
-    templateUrl: "partials/presence.html"
+    templateUrl: "partials/presence.html",
+    controller: "PresenceController",
   });
 });
